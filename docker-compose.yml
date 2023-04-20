@@ -7,14 +7,14 @@ services:
     ports:
       - 27017:27017
   yolo-web-client:
-    image: muriithike/yolo-client-img:latest
+    image: muriithike/yolo-client-img:v1.0.0
     environment:
       PORT: 3000
       PROXY_API: http://yolo-web-backend:8080/
     ports:
       - 3000:3000
   yolo-web-backend:
-    image: muriithike/yolo-client-img:latest
+    image: muriithike/yolo-client-img:v1.0.0
     environment:
       MONGODB_URI: mongodb://yolo-web-db:27017/yolomy    
     ports:
