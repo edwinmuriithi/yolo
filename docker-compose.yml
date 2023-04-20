@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  yolo-web-db:
+    image: mongo:5.0.16
+    environment:
+      MONGO_DATABASE: yolomy
+    ports:
+      - 27017:27017
+      
