@@ -14,7 +14,7 @@ services:
     ports:
       - 3000:3000
   yolo-web-backend:
-    image: muriithike/yolo-client-img:v1.0.0
+    image: muriithike/yolo-backend-img:v1.0.0
     environment:
       MONGODB_URI: mongodb://yolo-web-db:27017/yolomy    
     ports:
