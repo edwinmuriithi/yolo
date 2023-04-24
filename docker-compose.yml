@@ -8,6 +8,8 @@ services:
       - 27017:27017
     networks:
       - yolo-service
+    volumes:
+      - yolo-volumes:/etc/mongodb/data
   yolo-web-client:
     image: muriithike/yolo-client-img:v1.0.0
     environment:
@@ -28,3 +30,5 @@ services:
 networks:
   yolo-service:
     driver: bridge
+volumes:
+  yolo-volumes:
