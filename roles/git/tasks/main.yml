@@ -1,0 +1,6 @@
+---
+# tasks file for git
+- name: Install git
+  apt:
+    name: git
+    state: present
