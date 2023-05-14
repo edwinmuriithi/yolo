@@ -1,0 +1,7 @@
+#Git clone variables
+#git repo
+repo: "https://github.com/edwinmuriithi/yolo"
+#branch
+yolo_version: "master"
+#repo destination
+dest: "/home/Muriithi/yolo"
