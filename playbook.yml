@@ -1,0 +1,5 @@
+---
+- name: Yolo Playbook
+  hosts: all
+  become: yes
+  
