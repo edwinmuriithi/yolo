@@ -31,7 +31,7 @@ npm install react-scripts
         ```
   
   
-2. Backend side
+2. Dockerizing Backend side
     * Create a Dockerfile 
         ```
         cd backend/
@@ -69,7 +69,6 @@ npm install react-scripts
         2. It will be containg networks to allow for all services to be on the same network
    > Client sends a request to the backend, backend either posts or fetchs necessary data to/from database depending on the request type.
 
-       ```
        sudo docker compose up
-       ```  
+         
  ---  
