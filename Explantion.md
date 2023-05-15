@@ -20,7 +20,7 @@ npm install react-scripts
     * Set up the final layer to start up the application
     * Build the image
         ```
-        docker build . -t <dockerhubUsername\imageName:version>
+        docker build . -t <dockerhubUsername\imageName:version> .
 
         ```
     * Bulding an image at this stage allows you to push to Dockerhub so on running Docker compose it will be pulled.
@@ -45,14 +45,14 @@ npm install react-scripts
     * Set up the final layer to start up the application
     * Build the image
         ```
-        sudo docker build . -t <dockerhubUsername\imageName:tag>
+        docker build . -t <dockerhubUsername\imageName:version> .
 
         ```
     * Bulding an image at this stage allows you to push to Dockerhub so on running Docker compose it will be pulled.
     * Push to Docker Hub
         ```
-        sudo docker login
-        sudo docker push <dockerhubUsername\imageName:tag>
+        docker login
+        docker push <dockerhubUsername\imageName:version>
         ```
   
 3. Docker Compose
