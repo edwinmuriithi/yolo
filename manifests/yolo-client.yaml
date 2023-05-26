@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yolo-client-deployment
+  labels:
+    yolo-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yolo-client
+  template:
+    metadata:
+      labels:
+        app: yolo-client
+    spec:
+      containers:
+      - name: yolo-client
+        image: muriithike/yolo-client-img:v1.0.0
+        ports:
+        - containerPort: 3000
