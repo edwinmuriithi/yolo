@@ -19,3 +19,18 @@ spec:
         image: muriithike/yolo-client-img:v1.0.0
         ports:
         - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: yolo-client-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: yolo-client
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+      nodePort: 30100
+
