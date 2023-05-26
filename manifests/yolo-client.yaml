@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: yolo-client-deployment
   labels:
-    yolo-client
+    app: yolo-client
 spec:
   replicas: 1
   selector:
@@ -19,7 +19,9 @@ spec:
         image: muriithike/yolo-client-img:v1.0.0
         ports:
         - containerPort: 3000
-      
+        env:
+        - name: yolo-backend
+          value: http://yolo-backend:5000/
 ---
 apiVersion: v1
 kind: Service
