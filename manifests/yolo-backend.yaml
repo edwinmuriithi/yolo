@@ -35,3 +35,18 @@ spec:
             configMapKeyRef:
               name: mongo-config
               key: mongo-url
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: yolo-backend-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: yolo-backend
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      
+
