@@ -48,6 +48,6 @@ kubectl get all
 ```
 12. Use the following link to access our deployed application
 ```
-http://35.224.243.37:3000/
+http://34.123.197.108:3000/
 ```
 

@@ -3,7 +3,7 @@ This refers to the automated configuration, co-ordination and management of comp
 
 ## Deployed link
 ```
-http://35.224.243.37:3000/
+http://34.123.197.108:3000/
 ```
 
 # Steps
