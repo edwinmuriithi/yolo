@@ -47,4 +47,7 @@ kubectl get all
 
 ```
 12. Use the following link to access our deployed application
+```
+http://35.224.243.37:3000/
+```
 

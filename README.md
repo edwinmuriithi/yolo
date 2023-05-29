@@ -1,6 +1,11 @@
 # Orchestration
 This refers to the automated configuration, co-ordination and management of computer systems and services.
 
+## Deployed link
+```
+http://35.224.243.37:3000/
+```
+
 # Steps
 1. We'll start deploying by first cloning our repo in the google cloud shell
 ```
@@ -47,7 +52,9 @@ kubectl get all
 
 ```
 12. Use the following link to access our deployed application
-
+```
+http://35.224.243.37:3000/
+```
 
 # Requirements
 Make sure that you have the following installed:
