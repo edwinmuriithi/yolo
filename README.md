@@ -40,11 +40,11 @@ gcloud container clusters create-auto yolowebapp-gke \
 ```
 10. Change directory to the manifest destination and run the following commands
 ```
-kubectl apply -f mongo-config.yaml.yaml
-kubectl apply -f mongo-secret.yaml.yaml
-kubectl apply -f mongo.yaml.yaml
-kubectl apply -f yolo-backend.yaml.yaml
-kubectl apply -f yolo-client.yaml.yaml
+kubectl apply -f mongo-config.yaml
+kubectl apply -f mongo-secret.yaml
+kubectl apply -f mongo.yaml
+kubectl apply -f yolo-backend.yaml
+kubectl apply -f yolo-client.yaml
 ```
 11. Run the following command to check status of the deployments
 ```
