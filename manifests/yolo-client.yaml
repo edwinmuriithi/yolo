@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: yolo-client
-        image: muriithike/yolo-client-img:v1.0.0
+        image: muriithike/yolo-client-img:v1.0.1
         ports:
         - containerPort: 3000
         env:
